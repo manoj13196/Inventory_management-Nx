@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
  "scripts": {
-  "build": "nx build backend",         
+  "build": "npx nx build backend",         
   "start": "node dist/apps/backend/main.js",
   "start:dev": "nx serve backend"
 },
