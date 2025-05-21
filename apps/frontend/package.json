@@ -2,6 +2,11 @@
   "name": "@inventory-app/frontend",
   "version": "0.0.1",
   "private": true,
+  "scripts": {
+  "dev": "nx serve frontend",               
+  "build": "nx build frontend",             
+  "preview": "vite preview"                 
+},
   "dependencies": {
     "@ant-design/icons": "^6.0.0",
     "@refinedev/antd": "^5.46.1",

@@ -28,12 +28,8 @@ const ItemsPage = () => {
   const { id } = useParams<{ id?: string }>();
   const [selectedItem, setSelectedItem] = useState<any | null>(null);
   const [isModalVisible, setIsModalVisible] = useState(false);
-  const [form] = Form.useForm();
-
-  // Parse categoryId or null if "all"
+  const [form] = Form.useForm();  
   const categoryId = id && id !== "all" ? parseInt(id) : null;
-
-  // Use `filters` to filter items by categoryId correctly
   const { data, isLoading, refetch } = useList({
     resource: "items",
     filters: categoryId
